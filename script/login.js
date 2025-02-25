@@ -5,10 +5,12 @@ document.getElementById('login-btn').addEventListener('click', function(event){
     const convertPin = parseInt(pin)
 
     if(accountNumber.length >= 11){
-        if(parseInt(pin) === 1234){
-            console.log('okay thik ache')
+        if(convertPin === 1234){
+            window.location.href="./main.html"
+        }else{
+            alert('Worng PIN')
         }
     }else{
-        console.log('nooo')
+        alert('Number is below 11 digits')
     }
 })
