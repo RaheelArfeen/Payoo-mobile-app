@@ -48,22 +48,22 @@
                     <p class="mt-2 text-[#838383] text-sm">CashOut</p>
                 </div>
 
-                <div class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
+                <div id="transfer-box" class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
                     <img src="assets/money1.svg" alt="">
                     <p class="mt-2 text-[#838383] text-sm">Transfer Moeny</p>
                 </div>
 
-                <div class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
+                <div id="bonus-box" class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
                     <img src="assets/bonus1.svg" alt="">
                     <p class="mt-2 text-[#838383] text-sm">Get Bonus</p>
                 </div>
 
-                <div class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
+                <div id="pay-box" class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
                     <img src="assets/purse1.svg" alt="">
                     <p class="mt-2 text-[#838383] text-sm">Pay Bill</p>
                 </div>
 
-                <div class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
+                <div id="transiction-box" class="box cursor-pointer transition duration-300 px-2 py-4 border-2 hover:bg-[#f3f8fe] hover:border-[#0874F2] border-[#dadada] rounded-xl flex flex-col items-center justify-center">
                     <img src="assets/transiction1.svg" alt="">
                     <p class="mt-2 text-[#838383] text-sm">Transactions</p>
                 </div>
@@ -158,17 +158,35 @@
                             <label class="fieldset-label font-bold text-[#525252] mb-1">Agent Number</label>
                             <input type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter 11 digit number" />
                             <label class="fieldset-label font-bold text-[#525252] mb-1">Amount</label>
-                            <input id="amount" type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter Amount to withdraw"/>
+                            <input id="cashoutAmount" type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter Amount to withdraw"/>
                             <label class="fieldset-label font-bold text-[#525252] mb-1">Pin Number</label>
-                            <input id="pin" type="password" class="input rounded-full mb-1 border-none outline-none bg-[#F4F5F7] p-4" placeholder="Enter 4 digit pin number" />
-                            <button id="add-money" class="btn bg-[#0874F2] text-white mt-4 rounded-full">Withdraw Money</button>
+                            <input id="cashoutPin" type="password" class="input rounded-full mb-1 border-none outline-none bg-[#F4F5F7] p-4" placeholder="Enter 4 digit pin number" />
+                            <button id="cashout-money" class="btn bg-[#0874F2] text-white mt-4 rounded-full">Withdraw Money</button>
                         </fieldset>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--  -->
+        <!-- transfer -->
+        <section id="transfer">
+            <h1>Transfer</h1>
+        </section>
+
+        <!-- Bonus -->
+         <section id="bonus">
+            <h1>Bonus</h1>
+         </section>
+
+         <!-- Pay bill -->
+        <section id="payBill">
+            <h1>Pay bill</h1>
+        </section>
+
+        <!-- transiction -->
+        <section class="transiction">
+            <h1>transiction</h1>
+        </section>
 
     </section>
 
