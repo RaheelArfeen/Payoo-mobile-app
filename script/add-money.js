@@ -32,19 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Validate account number (must be exactly 11 digits)
         if (!/^\d{11,}$/.test(accountNumber)) {
-            alert("Please enter a valid 11-digit bank account number.");
+            // alert("Please enter a valid 11-digit bank account number.");
             return;
         }
 
         // Validate amount (must be positive)
         if (isNaN(amount) || amount <= 0) {
-            alert("Please enter a valid amount.");
+            // alert("Please enter a valid amount.");
             return;
         }
 
         // Validate PIN
         if (pin !== "1234") {
-            alert("Incorrect PIN. Please enter the correct 4-digit PIN.");
+            // alert("Incorrect PIN. Please enter the correct 4-digit PIN.");
             return;
         }
 
