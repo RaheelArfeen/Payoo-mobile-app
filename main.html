@@ -25,7 +25,7 @@
                 <div class="flex items-center mt-6">
                     <img class="w-16" src="assets/Group.png" alt="">
                     <div>
-                        <h1 id="main-balance" class="text-lg font-bold">$ 4500</h1>
+                        <h1 id="main-balance" class="text-lg font-bold">$4500.00</h1>
                         <p class="text-[#838383] text-sm font-light">Available Balance</p>
                     </div>
                 </div>
@@ -68,54 +68,7 @@
                     <p class="mt-2 text-[#838383] text-sm">Transactions</p>
                 </div>
             </div>
-        </section>
-
-        <!-- latest payment -->
-        <!-- <section class="md:px-6 px-3 py-8">
-            <div class="flex justify-between items-center">
-                <h1 class="text-lg font-medium">Latest Payment</h1>
-                <p class="text-[#838383] text-sm">View All</p>
-            </div>
-            
-            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
-                <div class="flex items-center">
-                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
-                        <img src="assets/wallet1.svg" alt="">
-                    </div>
-                    <div>
-                        <h3 class="text-lg">Electricity Bill</h3>
-                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-
-            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
-                <div class="flex items-center">
-                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
-                        <img src="assets/wallet1.svg" alt="">
-                    </div>
-                    <div>
-                        <h3 class="text-lg">Gas Bill</h3>
-                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-
-            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
-                <div class="flex items-center">
-                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
-                        <img src="assets/wallet1.svg" alt="">
-                    </div>
-                    <div>
-                        <h3 class="text-lg">Bank Deposit</h3>
-                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-         </section> -->
+        </section>        
 
          <!-- Add money -->
          <section id="add-money">
@@ -206,21 +159,103 @@
 
          <!-- Pay bill -->
         <section id="payBill">
-            <h1>Pay bill</h1>
+            <h1 class="text-lg ml-6 mt-8 font-medium">Pay Bill</h1>
+            <div class="hero-content flex-col text-center">
+                <div class="card w-full bg-white shrink-0">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Select to pay</label>
+                            <select class="select rounded-full bg-[#f4f5f7] border-none text-[#999999]">
+                                <option disabled selected>Select bank</option>
+                                <option class="Bkash">Bkash</option>
+                                <option class="Rocket">Rocket</option>
+                                <option class="Nagad">Nagad</option>
+                                <option class="Upay">Upay</option>
+                                <option class="Cellphin">Cellphin</option>
+                                <option class="sure-Cash">sure-Cash</option>
+                                <option class="Sonali Sheba">Sonali Sheba</option>
+                              </select>
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Biller Account Number</label>
+                            <input type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter account number" />
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Amount to Add</label>
+                            <input id="payAmount" type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Add Amount to pay"/>
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Pin Number</label>
+                            <input id="payPin" type="password" class="input rounded-full mb-1 border-none outline-none bg-[#F4F5F7] p-4" placeholder="Enter 4 digit pin number" />
+                            <button id="pay-bill" class="btn bg-[#0874F2] text-white mt-4 rounded-full">Pay Now</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- transiction -->
-        <section class="transiction">
-            <h1>transiction</h1>
-        </section>
+        <section id="transiction" class="md:px-6 px-3 py-8">
+            <div class="flex justify-between items-center">
+                <h1 class="text-lg font-medium">Transiction History</h1>
+                <p class="text-[#838383] text-sm">View All</p>
+            </div>
+            
+            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
+                <div class="flex items-center">
+                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
+                        <img src="assets/wallet1.svg" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-lg">Electricity Bill</h3>
+                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
+                <div class="flex items-center">
+                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
+                        <img src="assets/wallet1.svg" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-lg">Bank Deposit</h3>
+                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
+                <div class="flex items-center">
+                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
+                        <img src="assets/wallet1.svg" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-lg">Mobile Recharge</h3>
+                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="flex items-center justify-between pr-6 pl-4 py-2 bg-white rounded-xl border border-[#dadada] mt-4">
+                <div class="flex items-center">
+                    <div class="mr-4 bg-gray-200 p-3 rounded-full">
+                        <img src="assets/wallet1.svg" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-lg">Gas Bill</h3>
+                        <p class="text-xs text-[#838383]">Today 01:44 AM</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+         </section>
 
     </section>
 
-    <script src="script/add-money.js"></script>
-    <script src="script/cashout.js"></script>
-    <script src="script/transfer.js"></script>
-    <script src="script/bonus.js"></script>
-    <script src="script/toggle.js"></script>
+    <script src="script/add-money.js" defer></script>
+    <script src="script/cashout.js" defer></script>
+    <script src="script/transfer.js" defer></script>
+    <script src="script/bonus.js" defer></script>
+    <script src="script/paybill.js"></script>
+    <script src="script/toggle.js" defer></script>
     
 </body>
 </html>
