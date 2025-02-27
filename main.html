@@ -170,13 +170,39 @@
 
         <!-- transfer -->
         <section id="transfer">
-            <h1>Transfer</h1>
+            <h1 class="text-lg ml-6 mt-8 font-medium">Transfer Money</h1>
+            <div class="hero-content flex-col text-center">
+                <div class="card w-full bg-white shrink-0">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">User Account Number</label>
+                            <input type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter 11 digit number" />
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Amount</label>
+                            <input id="cashoutAmount" type="number" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter Amount to transfer"/>
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Pin Number</label>
+                            <input id="cashoutPin" type="password" class="input rounded-full mb-1 border-none outline-none bg-[#F4F5F7] p-4" placeholder="Enter 4 digit pin number" />
+                            <button id="cashout-money" class="btn bg-[#0874F2] text-white mt-4 rounded-full">Send Now</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Bonus -->
-         <section id="bonus">
-            <h1>Bonus</h1>
-         </section>
+        <section id="bonus">
+            <h1 class="text-lg ml-6 mt-8 font-medium">Get Bonus</h1>
+            <div class="hero-content flex-col text-center">
+                <div class="card w-full bg-white shrink-0">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-[#525252] mb-1">Enter Bonus Coupon</label>
+                            <input id="coupon" type="text" class="input mb-1 rounded-full border-none outline-none p-4 bg-[#F4F5F7] appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-moz-appearance:textfield]" placeholder="Enter your cupon" />
+                            <button id="apply-coupon-btn" class="btn bg-[#0874F2] text-white mt-4 rounded-full">Get Bonus</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
 
          <!-- Pay bill -->
         <section id="payBill">
@@ -192,6 +218,8 @@
 
     <script src="script/add-money.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transfer.js"></script>
+    <script src="script/bonus.js"></script>
     <script src="script/toggle.js"></script>
     
 </body>

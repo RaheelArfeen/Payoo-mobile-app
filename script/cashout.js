@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         
-        if (!/^[0-9]{4}$/.test(cashoutPin)) {
-            alert("Please enter a valid 4-digit PIN.");
+        if (cashoutAmount !== "1234") {
+            alert("Please enter your valid 4-digit PIN.");
             return;
         }
         
